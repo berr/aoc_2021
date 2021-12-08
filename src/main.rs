@@ -2,6 +2,7 @@ mod day1;
 mod day2;
 mod day3;
 mod day4;
+mod day5;
 mod input_handling;
 
 use std::error::Error;
@@ -19,6 +20,8 @@ fn main() -> Result<(), Box<dyn Error>> {
         (3, 2, day3::part2),
         (4, 1, day4::part1),
         (4, 2, day4::part2),
+        (5, 1, day5::part1),
+        (5, 2, day5::part2),
     ];
 
     for (day, part, fp) in &exercises {
